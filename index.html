@@ -1,41 +1,85 @@
 <!DOCTYPE html>
 <html>
-<style>
-p.serif {
-    font-family: "Times New Roman", Times, serif;
-}
-p.sansserif {
-    font-family: Arial, Helvetica, sans-serif;
-}
-body {
-	background-color: #b3ffec;
-	color: #ffffff;
-	font: 1rem "Adobe Source Sans Pro", sans-serif;
-	height: 100%;
-	line-height: 1.4rem;
-	margin: 0;
-        text-shadow: 1px 1px 2px #000000;
-}
-span {
-  display: inline-block;
-  vertical-align: middle;
-  line-height: normal;      
-}
-    div {
-      width: 500px;
-      height: 120px;
+
+  <style>
+
+    p.serif {
+      font-family: Rockwell, serif;
+    }
+
+    p.sansserif {
+      font-family: Helvetica, sans-serif;
+    }
+
+    p {
       line-height: 100px;
       text-align: center;
-      border: 0px solid #123456;
+      font-size: 18px;
+      line-height: normal;
     }
-</style>
+
+    body {
+	    color: #f0f0f0;
+	    height: 100%;
+	    line-height: 1.4rem;
+	    margin: 0;
+      vertical-align: middle;
+      <!--text-shadow: 1px 1px 2px #000000;-->
+    }
+
+    div {
+      width: 300px;
+      height: 385px;
+      background-color: rbga(255, 255, 255, 0);
+
+      position: absolute;
+      top:0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+
+      margin: auto;
+    }
+
+  </style>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>p5 background</title>
+  <script src="libraries/p5.js"></script>
+  <script language="javascript" src="libraries/p5.dom.js"></script>
+  <!--<script language="javascript" src="libraries/p5.sound.js"></script>-->
+  <script src="randomWalker.js"></script>
+  <!-- this line removes any default padding and style. you might only need one of these values set. -->
+
+</head>
+
 <body>
-<center>
-<font color="white" face="verdana">
-<h1>Hello World</h1>
-<div><span>My name is Aaron Lindsay. <br> <br> I enjoy thai food, animated movies, playing ping pong penhold, and my homepage is in progress.</span></div>
-<a href="https://github.com/aaronlindsay" >link to github</a>
-</font>
-</center>
+
+<div>
+  <center>
+    <font color=#f0f0f0 face="verdana">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <h1>aaron lindsay</h1>
+      <br>
+      <br>
+      <br>
+      <a href="https://github.com/aaronlindsay" style="color:#f0f0f0">github</a>
+      <br>
+      <a href="https://marblemoon.bandcamp.com" style="color:#f0f0f0">marble moon</a>
+      <br>
+      <a href="https://susuwatari.bandcamp.com" style="color:#f0f0f0">susuwatari</a>
+    </font>
+  </center>
+</div>
+
 </body>
 </html>
