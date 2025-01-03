@@ -436,7 +436,7 @@ function setup() {
 }
 
 function draw() {
-  background(8);
+  background(255);
   
   // // DEBUG
   // let coordPairings = []
