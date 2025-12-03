@@ -279,7 +279,7 @@ function setup() {
 
   chaosBtn = new ChaosUiButton(
     0, 0, // Position handled by menu
-    "☁", buttonRadius, textScale,
+    "☁\uFE0E", buttonRadius, textScale,
     (isToggled) => {
       if (isToggled) {
         setNoiseScale(defaultNoiseScale * 2.5);
@@ -294,13 +294,13 @@ function setup() {
 
   musicBtn = new MusicUiButton(
     0, 0, // Position handled by menu
-    "♬", buttonRadius, textScale * 0.875
+    "♬\uFE0E", buttonRadius, textScale * 0.875
   );
   musicBtn.isVisible = false;
 
   debugBtn = new DebugUiButton(
     0, 0, // Position handled by menu
-    "𖢥", buttonRadius, textScale,
+    "𖢥\uFE0E", buttonRadius, textScale,
     (isToggled) => {
       DEBUG = isToggled;
     }
@@ -309,7 +309,7 @@ function setup() {
 
   pauseBtn = new PauseUiButton(
     0, 0, // Position handled by menu
-    "⏯︎", buttonRadius, textScale * 1.15,
+    "⏯\uFE0E", buttonRadius, textScale * 1.15,
     (isToggled) => {
       window.isPaused = isToggled;
     }
@@ -318,7 +318,7 @@ function setup() {
 
   paletteBtn = new PaletteUiButton(
     0, 0, // Position handled by menu
-    "✎", buttonRadius, textScale,
+    "✎\uFE0E", buttonRadius, textScale,
     () => {
       changeTheme(snowflakes);
     }
@@ -327,7 +327,7 @@ function setup() {
 
   periscopeBtn = new PeriscopeUiButton(
     0, 0, // Position handled by menu
-    "◉", buttonRadius, textScale * 0.95,
+    "◉\uFE0E", buttonRadius, textScale * 0.95,
     (isToggled) => {
       ENABLE_PERISCOPE = isToggled;
       framePeriscopeToggled = frameCount;
@@ -340,7 +340,7 @@ function setup() {
   menuBtn = new MenuUiButton(
     WIDTH - buttonRadius - buttonPadding, HEIGHT - buttonRadius - buttonPadding,
     // "➦", buttonRadius, textScale
-    "❄", buttonRadius, textScale * 1.25, childButtons, childPaddingFactor
+    "❄\uFE0E", buttonRadius, textScale * 1.25, childButtons, childPaddingFactor
   );
   menuBtn.clipToWidth(WIDTH, buttonPadding);
 
